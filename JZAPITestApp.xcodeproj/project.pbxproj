@@ -9,21 +9,41 @@
 /* Begin PBXBuildFile section */
 		2F8C07BE28F34BBF0091EEB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07BD28F34BBF0091EEB9 /* AppDelegate.swift */; };
 		2F8C07C028F34BBF0091EEB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07BF28F34BBF0091EEB9 /* SceneDelegate.swift */; };
-		2F8C07C228F34BBF0091EEB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07C128F34BBF0091EEB9 /* ViewController.swift */; };
+		2F8C07C228F34BBF0091EEB9 /* InterestingInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07C128F34BBF0091EEB9 /* InterestingInfoViewController.swift */; };
 		2F8C07C528F34BBF0091EEB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8C07C328F34BBF0091EEB9 /* Main.storyboard */; };
 		2F8C07C728F34BC20091EEB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F8C07C628F34BC20091EEB9 /* Assets.xcassets */; };
 		2F8C07CA28F34BC20091EEB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8C07C828F34BC20091EEB9 /* LaunchScreen.storyboard */; };
+		2F8C07D728F351570091EEB9 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07D428F351570091EEB9 /* Endpoint.swift */; };
+		2F8C07D828F351570091EEB9 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07D528F351570091EEB9 /* Error.swift */; };
+		2F8C07D928F351570091EEB9 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07D628F351570091EEB9 /* Networking.swift */; };
+		2F8C07DB28F3532E0091EEB9 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07DA28F3532E0091EEB9 /* Animal.swift */; };
+		2F8C07DE28F358360091EEB9 /* InfoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07DD28F358360091EEB9 /* InfoFetcher.swift */; };
+		2F8C07E028F358A40091EEB9 /* AnimalFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07DF28F358A40091EEB9 /* AnimalFetcher.swift */; };
+		2F8C07E228F35A390091EEB9 /* AnimalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07E128F35A390091EEB9 /* AnimalResponse.swift */; };
+		2F8C07E528F35D520091EEB9 /* SwinjectStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07E428F35D520091EEB9 /* SwinjectStoryboard+Extension.swift */; };
+		DB4CD1CF1CE19BB098046EEC /* Pods_JZAPITestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE02F4CCAF08D75381A67A7 /* Pods_JZAPITestApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EE02F4CCAF08D75381A67A7 /* Pods_JZAPITestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JZAPITestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23832EA8DECC2BB83E62D4B9 /* Pods-JZAPITestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZAPITestApp.debug.xcconfig"; path = "Target Support Files/Pods-JZAPITestApp/Pods-JZAPITestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		2F8C07BA28F34BBF0091EEB9 /* JZAPITestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JZAPITestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8C07BD28F34BBF0091EEB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F8C07BF28F34BBF0091EEB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2F8C07C128F34BBF0091EEB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F8C07C128F34BBF0091EEB9 /* InterestingInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestingInfoViewController.swift; sourceTree = "<group>"; };
 		2F8C07C428F34BBF0091EEB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F8C07C628F34BC20091EEB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F8C07C928F34BC20091EEB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F8C07CB28F34BC20091EEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F8C07D428F351570091EEB9 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		2F8C07D528F351570091EEB9 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		2F8C07D628F351570091EEB9 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		2F8C07DA28F3532E0091EEB9 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		2F8C07DD28F358360091EEB9 /* InfoFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoFetcher.swift; sourceTree = "<group>"; };
+		2F8C07DF28F358A40091EEB9 /* AnimalFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFetcher.swift; sourceTree = "<group>"; };
+		2F8C07E128F35A390091EEB9 /* AnimalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalResponse.swift; sourceTree = "<group>"; };
+		2F8C07E428F35D520091EEB9 /* SwinjectStoryboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		EB6922C637A4652852D10535 /* Pods-JZAPITestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZAPITestApp.release.xcconfig"; path = "Target Support Files/Pods-JZAPITestApp/Pods-JZAPITestApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB4CD1CF1CE19BB098046EEC /* Pods_JZAPITestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +63,8 @@
 			children = (
 				2F8C07BC28F34BBF0091EEB9 /* JZAPITestApp */,
 				2F8C07BB28F34BBF0091EEB9 /* Products */,
+				74A8FB93B9E51C0D6E043DB4 /* Pods */,
+				9A06C9A307F4727AE73E6A83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +79,80 @@
 		2F8C07BC28F34BBF0091EEB9 /* JZAPITestApp */ = {
 			isa = PBXGroup;
 			children = (
+				2F8C07E328F35D150091EEB9 /* Extensions */,
+				2F8C07DC28F358110091EEB9 /* Fetcher */,
+				2F8C07D328F350E70091EEB9 /* Model */,
+				2F8C07D228F350D60091EEB9 /* Networking */,
+				2F8C07D128F34FF50091EEB9 /* Storyboard */,
 				2F8C07BD28F34BBF0091EEB9 /* AppDelegate.swift */,
 				2F8C07BF28F34BBF0091EEB9 /* SceneDelegate.swift */,
-				2F8C07C128F34BBF0091EEB9 /* ViewController.swift */,
-				2F8C07C328F34BBF0091EEB9 /* Main.storyboard */,
+				2F8C07C128F34BBF0091EEB9 /* InterestingInfoViewController.swift */,
 				2F8C07C628F34BC20091EEB9 /* Assets.xcassets */,
-				2F8C07C828F34BC20091EEB9 /* LaunchScreen.storyboard */,
 				2F8C07CB28F34BC20091EEB9 /* Info.plist */,
 			);
 			path = JZAPITestApp;
+			sourceTree = "<group>";
+		};
+		2F8C07D128F34FF50091EEB9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C07C828F34BC20091EEB9 /* LaunchScreen.storyboard */,
+				2F8C07C328F34BBF0091EEB9 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		2F8C07D228F350D60091EEB9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C07D428F351570091EEB9 /* Endpoint.swift */,
+				2F8C07D528F351570091EEB9 /* Error.swift */,
+				2F8C07D628F351570091EEB9 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2F8C07D328F350E70091EEB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C07DA28F3532E0091EEB9 /* Animal.swift */,
+				2F8C07E128F35A390091EEB9 /* AnimalResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F8C07DC28F358110091EEB9 /* Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C07DD28F358360091EEB9 /* InfoFetcher.swift */,
+				2F8C07DF28F358A40091EEB9 /* AnimalFetcher.swift */,
+			);
+			path = Fetcher;
+			sourceTree = "<group>";
+		};
+		2F8C07E328F35D150091EEB9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C07E428F35D520091EEB9 /* SwinjectStoryboard+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		74A8FB93B9E51C0D6E043DB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23832EA8DECC2BB83E62D4B9 /* Pods-JZAPITestApp.debug.xcconfig */,
+				EB6922C637A4652852D10535 /* Pods-JZAPITestApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A06C9A307F4727AE73E6A83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EE02F4CCAF08D75381A67A7 /* Pods_JZAPITestApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F8C07CE28F34BC20091EEB9 /* Build configuration list for PBXNativeTarget "JZAPITestApp" */;
 			buildPhases = (
+				402A9E0DEB9B0A11C963864E /* [CP] Check Pods Manifest.lock */,
 				2F8C07B628F34BBF0091EEB9 /* Sources */,
 				2F8C07B728F34BBF0091EEB9 /* Frameworks */,
 				2F8C07B828F34BBF0091EEB9 /* Resources */,
+				FE7A5B1D7DF91DB60FCB7545 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +223,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		402A9E0DEB9B0A11C963864E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JZAPITestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE7A5B1D7DF91DB60FCB7545 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JZAPITestApp/Pods-JZAPITestApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JZAPITestApp/Pods-JZAPITestApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JZAPITestApp/Pods-JZAPITestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F8C07B628F34BBF0091EEB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F8C07C228F34BBF0091EEB9 /* ViewController.swift in Sources */,
+				2F8C07C228F34BBF0091EEB9 /* InterestingInfoViewController.swift in Sources */,
+				2F8C07E528F35D520091EEB9 /* SwinjectStoryboard+Extension.swift in Sources */,
+				2F8C07DE28F358360091EEB9 /* InfoFetcher.swift in Sources */,
 				2F8C07BE28F34BBF0091EEB9 /* AppDelegate.swift in Sources */,
+				2F8C07D728F351570091EEB9 /* Endpoint.swift in Sources */,
+				2F8C07D928F351570091EEB9 /* Networking.swift in Sources */,
+				2F8C07DB28F3532E0091EEB9 /* Animal.swift in Sources */,
+				2F8C07E228F35A390091EEB9 /* AnimalResponse.swift in Sources */,
+				2F8C07D828F351570091EEB9 /* Error.swift in Sources */,
+				2F8C07E028F358A40091EEB9 /* AnimalFetcher.swift in Sources */,
 				2F8C07C028F34BBF0091EEB9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +424,7 @@
 		};
 		2F8C07CF28F34BC20091EEB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23832EA8DECC2BB83E62D4B9 /* Pods-JZAPITestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +453,7 @@
 		};
 		2F8C07D028F34BC20091EEB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB6922C637A4652852D10535 /* Pods-JZAPITestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
