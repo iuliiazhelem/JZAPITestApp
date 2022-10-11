@@ -21,6 +21,11 @@
 		2F8C07E028F358A40091EEB9 /* AnimalFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07DF28F358A40091EEB9 /* AnimalFetcher.swift */; };
 		2F8C07E228F35A390091EEB9 /* AnimalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07E128F35A390091EEB9 /* AnimalResponse.swift */; };
 		2F8C07E528F35D520091EEB9 /* SwinjectStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07E428F35D520091EEB9 /* SwinjectStoryboard+Extension.swift */; };
+		2F8C07EA28F559790091EEB9 /* AnimalInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07E928F559790091EEB9 /* AnimalInfoCell.swift */; };
+		2F8C07ED28F559EF0091EEB9 /* AnimalInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8C07EC28F559EF0091EEB9 /* AnimalInfoCell.xib */; };
+		2F8C07FE28F55D9C0091EEB9 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C07FD28F55D9C0091EEB9 /* UIImageView+Extension.swift */; };
+		2F8C080128F5639A0091EEB9 /* AnimalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C080028F5639A0091EEB9 /* AnimalInfoViewController.swift */; };
+		2F8C080428F56EAF0091EEB9 /* AnimalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C080328F56EAF0091EEB9 /* AnimalViewModel.swift */; };
 		DB4CD1CF1CE19BB098046EEC /* Pods_JZAPITestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE02F4CCAF08D75381A67A7 /* Pods_JZAPITestApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +48,11 @@
 		2F8C07DF28F358A40091EEB9 /* AnimalFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFetcher.swift; sourceTree = "<group>"; };
 		2F8C07E128F35A390091EEB9 /* AnimalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalResponse.swift; sourceTree = "<group>"; };
 		2F8C07E428F35D520091EEB9 /* SwinjectStoryboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		2F8C07E928F559790091EEB9 /* AnimalInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalInfoCell.swift; sourceTree = "<group>"; };
+		2F8C07EC28F559EF0091EEB9 /* AnimalInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalInfoCell.xib; sourceTree = "<group>"; };
+		2F8C07FD28F55D9C0091EEB9 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		2F8C080028F5639A0091EEB9 /* AnimalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalInfoViewController.swift; sourceTree = "<group>"; };
+		2F8C080328F56EAF0091EEB9 /* AnimalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewModel.swift; sourceTree = "<group>"; };
 		EB6922C637A4652852D10535 /* Pods-JZAPITestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZAPITestApp.release.xcconfig"; path = "Target Support Files/Pods-JZAPITestApp/Pods-JZAPITestApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +89,8 @@
 		2F8C07BC28F34BBF0091EEB9 /* JZAPITestApp */ = {
 			isa = PBXGroup;
 			children = (
+				2F8C080228F56E910091EEB9 /* ViewModel */,
+				2F8C07E728F5591E0091EEB9 /* UI */,
 				2F8C07E328F35D150091EEB9 /* Extensions */,
 				2F8C07DC28F358110091EEB9 /* Fetcher */,
 				2F8C07D328F350E70091EEB9 /* Model */,
@@ -86,7 +98,6 @@
 				2F8C07D128F34FF50091EEB9 /* Storyboard */,
 				2F8C07BD28F34BBF0091EEB9 /* AppDelegate.swift */,
 				2F8C07BF28F34BBF0091EEB9 /* SceneDelegate.swift */,
-				2F8C07C128F34BBF0091EEB9 /* InterestingInfoViewController.swift */,
 				2F8C07C628F34BC20091EEB9 /* Assets.xcassets */,
 				2F8C07CB28F34BC20091EEB9 /* Info.plist */,
 			);
@@ -134,8 +145,52 @@
 			isa = PBXGroup;
 			children = (
 				2F8C07E428F35D520091EEB9 /* SwinjectStoryboard+Extension.swift */,
+				2F8C07FD28F55D9C0091EEB9 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2F8C07E728F5591E0091EEB9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C07FF28F563620091EEB9 /* Controller */,
+				2F8C07E828F559280091EEB9 /* Cell */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2F8C07E828F559280091EEB9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C07EB28F559CB0091EEB9 /* AnimalInfo */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2F8C07EB28F559CB0091EEB9 /* AnimalInfo */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C07E928F559790091EEB9 /* AnimalInfoCell.swift */,
+				2F8C07EC28F559EF0091EEB9 /* AnimalInfoCell.xib */,
+			);
+			path = AnimalInfo;
+			sourceTree = "<group>";
+		};
+		2F8C07FF28F563620091EEB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C07C128F34BBF0091EEB9 /* InterestingInfoViewController.swift */,
+				2F8C080028F5639A0091EEB9 /* AnimalInfoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F8C080228F56E910091EEB9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C080328F56EAF0091EEB9 /* AnimalViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		74A8FB93B9E51C0D6E043DB4 /* Pods */ = {
@@ -216,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F8C07CA28F34BC20091EEB9 /* LaunchScreen.storyboard in Resources */,
+				2F8C07ED28F559EF0091EEB9 /* AnimalInfoCell.xib in Resources */,
 				2F8C07C728F34BC20091EEB9 /* Assets.xcassets in Resources */,
 				2F8C07C528F34BBF0091EEB9 /* Main.storyboard in Resources */,
 			);
@@ -272,9 +328,13 @@
 			files = (
 				2F8C07C228F34BBF0091EEB9 /* InterestingInfoViewController.swift in Sources */,
 				2F8C07E528F35D520091EEB9 /* SwinjectStoryboard+Extension.swift in Sources */,
+				2F8C07FE28F55D9C0091EEB9 /* UIImageView+Extension.swift in Sources */,
 				2F8C07DE28F358360091EEB9 /* InfoFetcher.swift in Sources */,
 				2F8C07BE28F34BBF0091EEB9 /* AppDelegate.swift in Sources */,
 				2F8C07D728F351570091EEB9 /* Endpoint.swift in Sources */,
+				2F8C080128F5639A0091EEB9 /* AnimalInfoViewController.swift in Sources */,
+				2F8C07EA28F559790091EEB9 /* AnimalInfoCell.swift in Sources */,
+				2F8C080428F56EAF0091EEB9 /* AnimalViewModel.swift in Sources */,
 				2F8C07D928F351570091EEB9 /* Networking.swift in Sources */,
 				2F8C07DB28F3532E0091EEB9 /* Animal.swift in Sources */,
 				2F8C07E228F35A390091EEB9 /* AnimalResponse.swift in Sources */,
