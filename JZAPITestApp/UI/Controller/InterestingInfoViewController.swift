@@ -17,6 +17,8 @@ class InterestingInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        overrideUserInterfaceStyle = .unspecified
+        
         requestInfo()
     }
     
@@ -43,10 +45,13 @@ class InterestingInfoViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showAnimalDetails", let vc = segue.destination as? AnimalInfoViewController, let dict = sender as? [String: Any], let index = dict["index"] as? Int
+        if segue.identifier == "showThemePopover", let vc = segue.destination as? ThemeViewController {
+            vc.themeDelegate = self
+        } else if segue.identifier == "showAnimalDetails", let vc = segue.destination as? AnimalInfoViewController, let dict = sender as? [String: Any], let index = dict["index"] as? Int
         {
             guard let item = viewModel.item(by: index) else { return }
             vc.item = item
+            vc.overrideUserInterfaceStyle = overrideUserInterfaceStyle
         }
     }
 }
@@ -81,7 +86,11 @@ extension InterestingInfoViewController: UITableViewDataSource {
         
         return UITableViewCell()
     }
-    
-    
+}
+
+extension InterestingInfoViewController: ThemeDelegate {
+    func changeTheme(_ theme: AppThemes) {
+        overrideUserInterfaceStyle = theme.systemTheme()
+    }
 }
 

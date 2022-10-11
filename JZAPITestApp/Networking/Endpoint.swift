@@ -16,7 +16,7 @@ enum InterestingInfo {
 extension InterestingInfo: Endpoint {
     var path: String {
         switch self {
-        case .animals: return "https://zoo-animal-api.herokuapp.com/animals/rand/3"
+        case .animals: return "https://zoo-animal-api.herokuapp.com/animals/rand/10"
         }
     }
 }
